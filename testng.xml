@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/IdeaProjects/clone1/Edso_Maven_Project_TestNG">
+        <classes>
+            <class name="annotation.AnnotationMethod">
+                <methods>
+                    <include name="tC01"/>
+                    <include name="tC02"/>
+                </methods>
+            </class>
+            <class name="annotation.DependOnGroup">
+                <methods>
+                    <include name="method"/>
+                    <include name="method2"/>
+                </methods>
+            </class>
+            <class name="annotation.DependOnMethod">
+                <methods>
+                    <include name="method"/>
+                    <include name="method2"/>
+                </methods>
+            </class>
+            <class name="annotation.PriorityClass">
+                <methods>
+                    <include name="tC_A"/>
+                    <include name="tC_B"/>
+                    <include name="tC_C"/>
+                    <include name="tC_D"/>
+                    <include name="tC_E"/>
+                    <include name="tC_F"/>
+                    <include name="tC_G"/>
+                </methods>
+            </class>
+            <class name="annotation.TestNgBasic">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
