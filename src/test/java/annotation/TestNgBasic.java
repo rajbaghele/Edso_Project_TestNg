@@ -2,7 +2,11 @@ package annotation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class TestNgBasic {
     public WebDriver driver;
@@ -13,7 +17,8 @@ public class TestNgBasic {
         driver=new ChromeDriver();
         driver.get("https://www.saucedemo.com/v1/");
         driver.close();
-        System.out.println(" i am changing for the git");
+      
+
 
     }
     @Test
